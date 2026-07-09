@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Dashboard</title>
+    </head>
+    <style>
+        .content {
+            max-width: fit-content;
+            margin: auto;
+            text-align: center;
+        }
+        .column {
+            float: left;
+            width: 50%;
+        }
+        .column-center {
+            float: left;
+            width: 100%;
+        }
+        .row {
+            width:100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+        body {
+            color: #E9EBEE;
+            background-color: #2A2A30;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            color: #77C2B3;
+        }
+
+        li {
+            color: #548C84;
+            margin-bottom: 8px;
+        }
+        
+        p {
+            font-family: verdana;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Centers the contents of any form inside a .column div */
+        .column form {
+            text-align: center;
+            margin-top: 10px; /* Optional: adds some spacing */
+        }
+
+        input {
+            -webkit-appearance:textfield;
+            box-sizing: content-box;
+            font-family: verdana;
+            font-size: 16px;
+        }
+    </style>
+
+    <body>
+        <div class="content">
+
+            <form action="https://duckduckgo.com/" method="get">
+                <input type="search" name="q" autofocus size="80" placeholder="Duck Duck Go">
+                <input type="submit" value="Search">
+            </form>
+            <br/>
+            <form action="https://giphy.com/search" method="get">
+                <input type="search" name="q" autofocus size="80" placeholder="Giphy">
+                <input type="submit" value="Search">
+            </form>
+            <br/>
+            <form id="jiraForm">
+                <input type="search" id="ticketNumber" autofocus size="84" placeholder="Jira Ticket #">
+                <input type="submit" value="Go">
+            </form>
+
+            <section class="row">
+                <div class="column">
+                    <h1>Eldamar</h1>
+                    <p>
+                        <a href="https://sonarcloud.io/project/overview?id=ifit_eldamar"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_eldamar&metric=alert_status&token=60a439be58aba70af36bb27a793109e481338193"></a>
+                        <a href="https://sonarcloud.io/project/overview?id=ifit_eldamar"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_eldamar&metric=ncloc&token=60a439be58aba70af36bb27a793109e481338193"></a>
+                    </p>
+                    <p>
+                        <a href="https://sonarcloud.io/summary/overall?id=ifit_eldamar"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_eldamar&metric=coverage&token=60a439be58aba70af36bb27a793109e481338193"></a>
+                        <a href="https://sonarcloud.io/project/issues?resolved=false&types=CODE_SMELL&id=ifit_eldamar"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_eldamar&metric=code_smells&token=60a439be58aba70af36bb27a793109e481338193"></a>
+                    </p>
+
+                    <p> <a href="https://appstoreconnect.apple.com/teams/69a6de6f-fa09-47e3-e053-5b8c7c11a4d1/apps/1274601042/ci/groups"><img src="apple.png" width="13" height="16"> Xcode Cloud</a> </p>
+                    <p> 
+                        <a href="https://github.com/ifit/eldamar"><img src="github.png" width="16" height="16"> Github</a> 
+                    </p>
+                    <p> <a href="https://ifitdev.atlassian.net/wiki/spaces/EL/overview"><img src="confluence.png" width="16" height="16"> Confluence</a> </p>
+                    <p> <a href="https://ifitdev.atlassian.net/jira/software/c/projects/ELD/boards/723"><img src="jira_active.svg" width="16" height="16"> Current Sprint</a> </p>
+                    <p> <a href="https://ifitdev.atlassian.net/jira/software/c/projects/ELD/boards/723/backlog?view=detail&selectedIssue=ELD-714&issuepmit=100"><img src="jira_backlog.svg" width="16" height="16"> Backlog</a> </p>
+                    <p> <a href="https://ifitdev.atlassian.net/issues/?jql=project%20%3D%20ELD%20AND%20status%20in%20(Backlog%2C%20Blocked%2C%20%22In%20Progress%22%2C%20%22Selected%20for%20Dev%22%2C%20%22To%20Do%22%2C%20%22Waiting%20to%20Merge%22)%20AND%20%22Epic%20Link%22%20%3D%20ELD-608%20order%20by%20created%20DESC"><img src="ci_cd.svg" width="16" height="16"> CI/CD Tickets</a> </p>
+                    <p> <img src="firebase_28dp.png" width="16" height="16"> Firebase
+                        <a href="https://console.firebase.google.com/project/eldamar-prod/overview">Prod</a> / <a href="https://console.firebase.google.com/project/eldamar-test/overview">Test</a>
+                    </p>
+
+                    <h1>glassos-swift</h1>
+                    <p>
+                        <a href="https://sonarcloud.io/project/overview?id=ifit_glassos-swift"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_glassos-swift&metric=alert_status&token=f486566c19ae19d875524e0beb100301decab9b8"></a>
+                        <a href="https://sonarcloud.io/project/overview?id=ifit_glassos-swift"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_glassos-swift&metric=ncloc&token=f486566c19ae19d875524e0beb100301decab9b8"></a>
+                    </p>
+                    <p>
+                        <a href="https://sonarcloud.io/summary/overall?id=ifit_glassos-swift"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_glassos-swift&metric=coverage&token=f486566c19ae19d875524e0beb100301decab9b8"></a>
+                        <a href="https://sonarcloud.io/project/issues?resolved=false&types=CODE_SMELL&id=ifit_glassos-swift"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_glassos-swift&metric=code_smells&token=f486566c19ae19d875524e0beb100301decab9b8"></a>
+                    </p>
+                    <p> <a href="https://appstoreconnect.apple.com/teams/69a6de6f-fa09-47e3-e053-5b8c7c11a4d1/apps/6502789169/ci/groups"><img src="apple.png" width="13" height="16"> Xcode Cloud - glassos-swift</a> </p>
+                    <p> 
+                        <a href="https://github.com/ifit/glassos-swift"><img src="github.png" width="16" height="16"> Github</a> 
+                    </p>
+
+                    <h1>tirion-library</h1>
+                    <p>
+                        <a href="https://sonarcloud.io/project/overview?id=ifit_tirion-library"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_tirion-library&metric=alert_status&token=9dc24b1e3b902b97c052ff5176c6375e28573eb1"></a>
+                        <a href="https://sonarcloud.io/project/overview?id=ifit_tirion-library"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_tirion-library&metric=ncloc&token=9dc24b1e3b902b97c052ff5176c6375e28573eb1"></a>
+                    </p>
+                    <p>
+                        <a href="https://sonarcloud.io/summary/overall?id=ifit_tirion-library"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_tirion-library&metric=coverage&token=9dc24b1e3b902b97c052ff5176c6375e28573eb1"></a>
+                        <a href="https://sonarcloud.io/project/issues?resolved=false&types=CODE_SMELL&id=ifit_tirion-library"><img src="https://sonarcloud.io/api/project_badges/measure?project=ifit_tirion-library&metric=code_smells&token=9dc24b1e3b902b97c052ff5176c6375e28573eb1"></a>
+                    </p>
+                    <p> 
+                        <a href="https://github.com/ifit/tirion-library"><img src="github.png" width="16" height="16"> Github</a> 
+                    </p>
+
+                </div>
+
+                <div class="column">
+
+
+                    <h1>Valinor / Megaladon</h1>
+                    <p>
+                        <img src="github.png" width="16" height="16">
+                        <a href="https://github.com/ifit/valinor">Github</a>
+                    </p>
+
+                    <h1>Forlond</h1>
+                    <p>
+                        <img src="github.png" width="16" height="16">
+                        <a href="https://github.com/ifit/forlond">Github</a>
+                    </p>
+
+                    <h1>iFIT Home</h1>
+                    <p>
+                        <img src="firebase_28dp.png" width="16" height="16">
+                        <a href="https://console.firebase.google.com/project/ifit-home---development/overview">Firebase</a> / <a href="https://console.cloud.google.com/monitoring?authuser=0&project=ifit-home---development">Google Cloud</a>
+                    </p>
+                    <p>
+                        <img src="firebase_28dp.png" width="16" height="16">
+                        <a href="https://console.cloud.google.com/logs/query">Logs</a> / 
+                        <a href="https://console.cloud.google.com/errors">Errors</a>
+                    </p>
+
+                    <p> Firestore 
+                        <a href="https://console.firebase.google.com/project/ifit-home---development/firestore/databases/-default-/data/~2Fusers~2F6464fbf777b405003994fb11">darrellb+test PROD</a> / 
+                        <a href="https://console.firebase.google.com/project/ifit-home---development/firestore/databases/-default-/data/~2Fusers~2F5db5c3021a0a48020d5f4137">darrellb personal</a>
+                    </p>
+
+                    <form id="firestoreForm">
+                        <label for="userId">Firestore:</label>
+                        <input type="search" id="userId" autofocus size="32" placeholder="User ID">
+                        <input type="submit" value="Go">
+                    </form>
+
+                    <h2>Deprecated / RC-only</h2>
+                    <h3>glassos-swift-shim</h3>
+                    <p> 
+                        <a href="https://github.com/ifit/glassos-swift-shim"><img src="github.png" width="16" height="16"> Github</a> 
+                    </p>
+
+                    <h3>mqtt-kotlin-sdk</h3>
+                    <p>
+                        <img src="github.png" width="16" height="16">
+                        <a href="https://github.com/ifit/mqtt-kotlin-sdk">Github</a> 
+                    </p>
+
+                    <h3>iFIT Home</h3>
+                    <p>
+                        <img src="github.png" width="16" height="16">
+                        <a href="https://github.com/ifit/val-ifithome-service">Service</a> / 
+                        <a href="https://github.com/ifit/val-homefirebasetoken-service">Tokens</a> / 
+                        <a href="https://github.com/ifit/ifit-home-scripts">Scripts</a> 
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="column-center">
+                    <h1>Common</h1>
+                    <p> 
+                        <a href="https://developer.apple.com/system-status/"><img src="apple.png" width="13" height="16"> Xcode Cloud Status</a> 
+                        -
+                        <a href="https://developer.apple.com/forums/topics/developer-tools-and-services/developer-tools-and-services-xcode-cloud">Forums</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/ifit/valinor-github-actions/tree/swift"><img src="github.png" width="16" height="16"> Valinor Github Workflows - Swift branch</a> 
+                    </p>
+                    <p>
+                        <a href="https://www.githubstatus.com"><img src="github.png" width="16" height="16"> Github Status</a>
+                    </p>
+                    <p> 
+                        <a href="https://status.sonarqube.com"><img src="sonarcloud-logo.png" width="16" height="16"> SonarQube Cloud Status</a>
+                    </p>
+
+                    <h1>Personal</h1>
+                    <p> <a href="https://github.com/pulls/review-requested"><img src="assignment.svg" width="16" height="16"> Assigned PRs</a> </p>
+                    <p> <a href="https://docs.google.com/document/d/1ATo24i94wp6Mk_ov9owkRl_xNf3u4qswyciXFI91t18/edit#heading=h.fi3qkaqa5k4t"><img src="note.svg" width="16" height="16"> 1:1 Notes</a> </p>
+                    <p> <a href="https://online.adp.com/signin/v1/?APPID=Pin4NAS&productId=80e309c3-709e-bae1-e053-3505430b5495&returnURL=https://login.adp.com&callingAppId=landing&TARGET=-SM-https://login.adp.com/ee/getProducts?event=Next&userSelected=anActiveEmployee&transId=79D-C35-5BV8BM"><img src="adp.svg" height="16"> ADP</a> - <a href="https://my.adp.com/">My ADP</a> </p>
+                    <p> Freshservice department: 171 - Electronics R&D</p>
+                    <p> Concur department: (171) SOFTWARE ENG & TESTING</p>
+                </div>
+        </section>
+        </div>
+
+        <script>
+            document.getElementById('firestoreForm').addEventListener('submit', function(e) {
+                // 1. Prevent the default "get" search behavior (?q=...)
+                e.preventDefault(); 
+                
+                // 2. Get the value entered in the box
+                const userId = document.getElementById('userId').value;
+                
+                // 3. Define your base URL
+                const baseUrl = "https://console.firebase.google.com/project/ifit-home---development/firestore/databases/-default-/data/~2Fusers~2F";
+                
+                // 4. Redirect the browser to the base URL + the user ID
+                if (userId) {
+                    window.location.href = baseUrl + userId;
+                }
+            });
+            document.getElementById('jiraForm').addEventListener('submit', function(e) {
+                // 1. Prevent the default "get" search behavior (?q=...)
+                e.preventDefault(); 
+                
+                // 2. Get the value entered in the box
+                const userId = document.getElementById('ticketNumber').value;
+                
+                // 3. Define your base URL
+                const baseUrl = "https://ifitdev.atlassian.net/browse/";
+                
+                // 4. Redirect the browser to the base URL + the user ID
+                if (userId) {
+                    window.location.href = baseUrl + userId;
+                }
+            });
+        </script>
+
+    </body>
+</html>
