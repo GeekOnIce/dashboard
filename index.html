@@ -432,10 +432,13 @@
             });
             document.getElementById('jiraForm').addEventListener('submit', function(e) {
                 e.preventDefault();
-                const userId = document.getElementById('ticketNumber').value;
+                let ticketNumber = document.getElementById('ticketNumber').value.trim();
                 const baseUrl = "https://ifitdev.atlassian.net/browse/";
-                if (userId) {
-                    window.location.href = baseUrl + userId;
+                if (ticketNumber) {
+                    if (/^-?\d+$/.test(ticketNumber)) {
+                        ticketNumber = "CLI-" + ticketNumber.replace(/^-/, "");
+                    }
+                    window.location.href = baseUrl + ticketNumber;
                 }
             });
         </script>
